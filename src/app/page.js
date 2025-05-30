@@ -8,6 +8,7 @@ export default function Home() {
     <section>
       <Header />
       <main>
+        {/*!!!!!!!!!!!!!!!!!!! HERO!!!!!!!!!!!!!! */}
         <section className='hero'>
           <img src='/me.png' alt='Hero Image' />
           <div className='gradient-hero'></div>
@@ -59,12 +60,15 @@ export default function Home() {
         </section>
         <section className='container-hero-2'>
           <div div className='container-hero-text-2'>
-            <h2 className='hero-title-2'>  <TypewriterText /> </h2>
+            <h2 className='hero-title-2'>
+              {" "}
+              <TypewriterText />{" "}
+            </h2>
             <p className='text-hero-4'>
               Currently, I'm a Software Engineer at
               <a href='https://www.linkedin.com/in/samuel-pouard/'>
                 {" "}
-                <img src='/linkedin.png' /> Linkedin
+                <img src='/linkedin.png' alt='logo linkedin' /> Linkedin
               </a>
               ,
             </p>
@@ -75,16 +79,61 @@ export default function Home() {
             </p>
           </div>
         </section>
+        {/* !!!!!!!!!!!!!!!!!!!!!!!!!WORK!!!!!!!!!!!!!!!! */}
 
+        <section className='work'>
+          <h2 className='work-title'>Work Experience</h2>
+           <div className="gradient-work"></div>
+          <div className='container-all-work'>
+            <div className='container-work'>
+              <img src='/work1.png' alt='logo work' />
+              <div className="container-work-text">
+                <h3>CIB on the Mobile</h3>
+                <p>
+                  Take your client onboard seamlessly by our amazing tool of
+                  digital onboard process.
+                </p>
+                <button className='btn-work'>LEARN MORE</button>
+              </div>
+            </div>
 
+            <div className='container-work'>
+              <img src='/work2.png' alt='logo work' />
+              <div className="container-work-text">
+                <h3>CIB on the Mobile</h3>
+                <p>
+                  Take your client onboard seamlessly by our amazing tool of
+                  digital onboard process.
+                </p>
+                <button className='btn-work'>LEARN MORE</button>
+              </div>
+            </div>
 
+            <div className='container-work'>
+              <img src='/work3.png' alt='logo work' />
+              <div className="container-work-text">
+                <h3>CIB on the Mobile</h3>
+                <p>
+                  Take your client onboard seamlessly by our amazing tool of
+                  digital onboard process.
+                </p>
+                <button className='btn-work'>LEARN MORE</button>
+              </div>
+            </div>
 
-
-
-
-
-
-        
+            <div className='container-work'>
+              <img src='/work4.png' alt='logo work' />
+              <div className="container-work-text">
+                <h3>CIB on the Mobile</h3>
+                <p>
+                  Take your client onboard seamlessly by our amazing tool of
+                  digital onboard process.
+                </p>
+                <button className='btn-work'>LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       {/* <Footer /> */}
     </section>
