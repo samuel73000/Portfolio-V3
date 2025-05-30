@@ -6,15 +6,20 @@
   display: flex;
   margin-top: 100px;
 }
-.hero img {
-  border-radius: 50%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #763cac 0%,
-    rgba(50, 15, 133, 0) 100%
-  );
-}
 
+.hero img {
+    z-index: 5;
+}
+.gradient-hero{
+    z-index: 1;
+    left: 33%;
+    position: absolute;
+    width: 385px;
+height: 431px;
+flex-shrink: 0;
+border-radius: 50%;
+background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
+}
 .container-hero-text {
   margin-left: 20px;
   font-family: Preahvihear;

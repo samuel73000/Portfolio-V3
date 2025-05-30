@@ -1,6 +1,7 @@
 import "../styles/home.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import TypewriterText from "../components/typewriterText";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <section className='hero'>
           <img src='/me.png' alt='Hero Image' />
+          <div className='gradient-hero'></div>
           <div div className='container-hero-text'>
             <svg
               className='svg-fleche-hero'
@@ -56,16 +58,33 @@ export default function Home() {
           </div>
         </section>
         <section className='container-hero-2'>
-         <div div className='container-hero-text-2'>
-              <h2 className="hero-title-2">I'm a Software Engineer.| </h2>
-            <p className="text-hero-4">Currently, I'm a Software Engineer at<a href="https://www.linkedin.com/in/samuel-pouard/"> <img src="/linkedin.png"/> Linkedin</a>,</p>
-            <p className="text-hero-5">
+          <div div className='container-hero-text-2'>
+            <h2 className='hero-title-2'>  <TypewriterText /> </h2>
+            <p className='text-hero-4'>
+              Currently, I'm a Software Engineer at
+              <a href='https://www.linkedin.com/in/samuel-pouard/'>
+                {" "}
+                <img src='/linkedin.png' /> Linkedin
+              </a>
+              ,
+            </p>
+            <p className='text-hero-5'>
               A self-taught UI/UX designer, functioning in the industry for 3+
               years now. I make meaningful and delightful digital products that
               create an equilibrium between user needs and business goals.
             </p>
-            </div>
+          </div>
         </section>
+
+
+
+
+
+
+
+
+
+        
       </main>
       {/* <Footer /> */}
     </section>
