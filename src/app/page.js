@@ -1,6 +1,5 @@
 import "../styles/home.css";
 import Header from "../components/header";
-import Footer from "../components/footer";
 import TypewriterText from "../components/typewriterText";
 
 export default function Home() {
@@ -83,11 +82,11 @@ export default function Home() {
 
         <section className='work'>
           <h2 className='work-title'>Work Experience</h2>
-           <div className="gradient-work"></div>
+          <div className='gradient-work'></div>
           <div className='container-all-work'>
             <div className='container-work'>
               <img src='/work1.png' alt='logo work' />
-              <div className="container-work-text">
+              <div className='container-work-text'>
                 <h3>CIB on the Mobile</h3>
                 <p>
                   Take your client onboard seamlessly by our amazing tool of
@@ -99,7 +98,7 @@ export default function Home() {
 
             <div className='container-work'>
               <img src='/work2.png' alt='logo work' />
-              <div className="container-work-text">
+              <div className='container-work-text'>
                 <h3>CIB on the Mobile</h3>
                 <p>
                   Take your client onboard seamlessly by our amazing tool of
@@ -111,7 +110,7 @@ export default function Home() {
 
             <div className='container-work'>
               <img src='/work3.png' alt='logo work' />
-              <div className="container-work-text">
+              <div className='container-work-text'>
                 <h3>CIB on the Mobile</h3>
                 <p>
                   Take your client onboard seamlessly by our amazing tool of
@@ -123,7 +122,7 @@ export default function Home() {
 
             <div className='container-work'>
               <img src='/work4.png' alt='logo work' />
-              <div className="container-work-text">
+              <div className='container-work-text'>
                 <h3>CIB on the Mobile</h3>
                 <p>
                   Take your client onboard seamlessly by our amazing tool of
@@ -134,8 +133,55 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* !!!!!!!!!!!!!!!!!!!!!!!!!WORK2!!!!!!!!!!!!!!!! */}
+        <section className='work2'>
+          <h3 className='work-title-2'>
+            I'm currently looking to join a <span>cross-functional</span> team
+          </h3>
+          <p className='work-subtile'>
+            that values improving people's lives through accessible design{" "}
+          </p>
+          <img src='/skill.png' />
+        </section>
+        {/* !!!!!!!!!!!!!!!!!!!Example !!!!!!!!!!!!!!!*/}
+        <section className='example'>
+          <div className='container-all-example-1'>
+            <div className='container-example'>
+               <div className='container-example-text-1'>
+              <p className="example-subtitle">Featured  Project</p>
+              <h3 className="example-title">Example of my work</h3>
+              <p className="example-text-1">
+                A web app for visualizing personalized Spotify data. View your
+                top artists, top tracks, recently played tracks, and detailed
+                audio information about each track. Create and save new
+                playlists of recommended tracks based on your existing playlists
+                and more.
+              </p>
+            </div>
+             <img src="/Screenshot1.png" />
+            </div>
+          </div>
+
+
+
+          <div className='container-all-example-2'>
+            <div className='container-example'>
+              <img src="/Screenshot1.png" />
+               <div className='container-example-text-2'>
+              <p className="example-subtitle">Featured  Project</p>
+              <h3 className="example-title">Example of my work</h3>
+              <p className="example-text-2">
+                A web app for visualizing personalized Spotify data. View your
+                top artists, top tracks, recently played tracks, and detailed
+                audio information about each track. Create and save new
+                playlists of recommended tracks based on your existing playlists
+                and more.
+              </p>
+            </div>
+            </div>
+          </div>
+        </section>
       </main>
-      {/* <Footer /> */}
     </section>
   );
 }
