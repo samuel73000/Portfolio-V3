@@ -1,0 +1,122 @@
+/* !!!!!!!!!!!!!!!!!!!!!!!HERO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+}
+.hero img {
+  border-radius: 50%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
+
+.container-hero-text {
+  margin-left: 20px;
+  font-family: Preahvihear;
+  margin-top: -100px;
+  color: #fff;
+  width: 15%;
+}
+.svg-fleche-hero {
+  width: 91.782px;
+  height: 81.857px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 13.5%;
+  left: 45%;
+}
+.span-hero-texte {
+  color: #7127ba;
+}
+.text-hero-1 {
+  font-size: 19px;
+  font-style: normal;
+  line-height: 130px;
+  letter-spacing: -0.5px;
+}
+.text-hero-2 {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.34px;
+}
+.hero-title-1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.664%; /* 63.332px */
+  letter-spacing: 1px;
+}
+.svg-cercle-hero {
+  width: 155.584px;
+  height: 57.899px;
+  transform: rotate(-1.744deg);
+  flex-shrink: 0;
+  position: absolute;
+  top: 26.1%;
+  left: 54.4%;
+}
+.text-hero-3 {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.22px;
+}
+
+.container-hero-2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  font-family: Preahvihear;
+  color: #fff;
+
+}
+.container-hero-text-2{
+    width: 40%;
+}
+.hero-title-2 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.text-hero-4 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.text-hero-4 img {
+width: 20px;
+height: 21px;
+flex-shrink: 0;
+margin-bottom: -3px;
+}
+
+.text-hero-4 a {
+color: #1877F2;
+font-size: 21px;
+line-height: normal;
+letter-spacing: 0.42px;
+}
+
+
+.text-hero-5 {
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  margin-top: 50px;
+}
