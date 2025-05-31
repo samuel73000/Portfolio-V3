@@ -1,17 +1,19 @@
+"use client";
 import "../styles/home.css";
 import TypewriterText from "../components/typewriterText";
-import * as React from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-
+import { useState } from "react";
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section>
       <main>
         {/*!!!!!!!!!!!!!!!!!!! HERO!!!!!!!!!!!!!! */}
         <section className='hero'>
-          <img src='/me.png' alt='Hero Image' />
           <div className='gradient-hero'></div>
+          <img src='/me.png' alt='Hero Image' />
           <div div className='container-hero-text'>
             <svg
               className='svg-fleche-hero'
@@ -188,32 +190,27 @@ export default function Home() {
             improving people's lives through accessible design. or have a
             project in mind? Let's connect.
           </p>
+          <Button
+            className='contact-button'
+            variant='contained'
+            onClick={() => setOpen(!open)}
+            sx={{
+              backgroundColor: "#9857d3",
+              marginTop: "100px",
+              marginBottom: "100px",
+              "&:hover": {
+                backgroundColor: "#7a46b1",
+              },
+            }}>
+              {open ? "close form" : "contact me"}
+          </Button>
 
-          {/* 
-          <form name='contact' method='POST' data-netlify='true'>
-            <p>
-              <label>
-                Your Name: <input type='text' name='name' />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email: <input type='email' name='email' />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name='message'></textarea>
-              </label>
-            </p>
-            <p>
-              <Button type='submit' variant='outlined'>
-                Send
-              </Button>
-            </p>
-          </form> */}
-
-          <form name='contact' method='POST' data-netlify='true' netlify>
+          <form
+            name='contact'
+            method='POST'
+            data-netlify='true'
+            netlify
+            className={open ? "form-visible" : "form-hidden"}>
             {/* Required for Netlify's bot to parse the form */}
             <input type='hidden' name='form-name' value='contact' />
 
