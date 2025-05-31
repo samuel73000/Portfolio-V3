@@ -4,15 +4,20 @@
   align-items: center;
   display: flex;
   margin-top: 130px;
+  position: relative;
+  width: 100%;
 }
-
-.hero img {
-  z-index: 5;
+.container-hero-all {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  width: 60%;
+  gap: 0px;
+  position: relative;
 }
 .gradient-hero {
   z-index: 1;
-  position: absolute;
- margin-right: 22vw;
   width: 385px;
   height: 431px;
   flex-shrink: 0;
@@ -22,22 +27,30 @@
     #763cac 0%,
     rgba(50, 15, 133, 0) 100%
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-
+.gradient-hero img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* ou cover selon l'effet voulu */
+  display: block;
+}
 
 .container-hero-text {
-  margin-left: 20px;
   font-family: Preahvihear;
-  margin-top: -100px;
   color: #fff;
-  width: 500px;
+  width: 600px;
+  position: relative;
 }
 .svg-fleche-hero {
+  margin-left: -100px;
+  margin-top: 35px;
   position: absolute;
- top: 7.5vh;
- right: 54vw; 
-  width: 91.782px;
-  height: 81.857px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
 }
 
@@ -69,52 +82,6 @@
   line-height: normal;
   letter-spacing: 0.22px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container-hero-2 {
   justify-content: center;
@@ -283,11 +250,11 @@
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!! Example !!!!!!!!!!!!!!!!! */
 
-.example{
+.example {
   display: flex;
   flex-direction: column;
-  gap: 100px; 
-  margin: 17vh 0 0 0; 
+  gap: 100px;
+  margin: 17vh 0 0 0;
 }
 
 .container-all-example-1,
@@ -362,7 +329,7 @@
 }
 
 /* !!!!!!!!!!!!!!!!!!!CONTACT!!!!!!!!!!!!!! */
-.contact{
+.contact {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -371,43 +338,41 @@
   margin-top: 130px;
   font-family: Preahvihear;
   margin-top: 300px;
-
 }
-.contact-title{
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.5px;
-width: 30%;
-
+.contact-title {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  width: 30%;
 }
-.contact-subtitle{
- color: #FFF;
-font-family: Preahvihear;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.3px;
-width: 30%;
-margin-top: 50px;
+.contact-subtitle {
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  width: 30%;
+  margin-top: 50px;
 }
-.contact-email{
-  color: #FFF;
-font-family: Preahvihear;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.3px;
-width: 30%;
-margin-top: 20px;
+.contact-email {
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  width: 30%;
+  margin-top: 20px;
 }
 
-form{
-  margin-top:50px;
-  margin-bottom:100px ;
+form {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .form-hidden {
