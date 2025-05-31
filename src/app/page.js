@@ -2,7 +2,8 @@ import "../styles/home.css";
 import TypewriterText from "../components/typewriterText";
 import * as React from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+
 export default function Home() {
   return (
     <section>
@@ -187,14 +188,8 @@ export default function Home() {
             improving people's lives through accessible design. or have a
             project in mind? Let's connect.
           </p>
-          <p className='contact-email'>samuelpouardpro@gmail.com</p>
 
-          
-
-
-
-
-
+        {/* 
           <form name='contact' method='POST' data-netlify='true'>
             <p>
               <label>
@@ -216,7 +211,87 @@ export default function Home() {
                 Send
               </Button>
             </p>
-          </form>
+          </form> */}
+
+
+
+
+
+
+
+
+
+
+<form name="contact" method="POST" data-netlify="true">
+  {/* Required for Netlify's bot to parse the form */}
+  <input type="hidden" name="form-name" value="contact" />
+
+  <TextField
+    label="Your Name"
+    name="name"
+    fullWidth
+    margin="normal"
+    sx={{
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': { borderColor: 'white' },
+        '&:hover fieldset': { borderColor: 'white' },
+        '&.Mui-focused fieldset': { borderColor: 'white' },
+      },
+      '& .MuiInputLabel-root': { color: 'white' },
+      '& .MuiInputBase-input': { color: 'white' },
+    }}
+  />
+
+  <TextField
+    label="Your Email"
+    name="email"
+    type="email"
+    fullWidth
+    margin="normal"
+    sx={{
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': { borderColor: 'white' },
+        '&:hover fieldset': { borderColor: 'white' },
+        '&.Mui-focused fieldset': { borderColor: 'white' },
+      },
+      '& .MuiInputLabel-root': { color: 'white' },
+      '& .MuiInputBase-input': { color: 'white' },
+    }}
+  />
+
+  <TextField
+    label="Message"
+    name="message"
+    multiline
+    rows={4}
+    fullWidth
+    margin="normal"
+    sx={{
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': { borderColor: 'white' },
+        '&:hover fieldset': { borderColor: 'white' },
+        '&.Mui-focused fieldset': { borderColor: 'white' },
+      },
+      '& .MuiInputLabel-root': { color: 'white' },
+      '& .MuiInputBase-input': { color: 'white' },
+    }}
+  />
+
+  <Button type="submit" variant="outlined" sx={{ marginTop: '1rem' }}>
+    Send
+  </Button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
         </section>
       </main>
     </section>
