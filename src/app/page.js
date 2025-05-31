@@ -147,39 +147,47 @@ export default function Home() {
         <section className='example'>
           <div className='container-all-example-1'>
             <div className='container-example'>
-               <div className='container-example-text-1'>
-              <p className="example-subtitle">Featured  Project</p>
-              <h3 className="example-title">Example of my work</h3>
-              <p className="example-text-1">
-                A web app for visualizing personalized Spotify data. View your
-                top artists, top tracks, recently played tracks, and detailed
-                audio information about each track. Create and save new
-                playlists of recommended tracks based on your existing playlists
-                and more.
-              </p>
-            </div>
-             <img src="/Screenshot1.png" />
+              <div className='container-example-text-1'>
+                <p className='example-subtitle'>Featured Project</p>
+                <h3 className='example-title'>Example of my work</h3>
+                <p className='example-text-1'>
+                  A web app for visualizing personalized Spotify data. View your
+                  top artists, top tracks, recently played tracks, and detailed
+                  audio information about each track. Create and save new
+                  playlists of recommended tracks based on your existing
+                  playlists and more.
+                </p>
+              </div>
+              <img src='/Screenshot1.png' />
             </div>
           </div>
-
-
 
           <div className='container-all-example-2'>
             <div className='container-example'>
-              <img src="/Screenshot1.png" />
-               <div className='container-example-text-2'>
-              <p className="example-subtitle">Featured  Project</p>
-              <h3 className="example-title">Example of my work</h3>
-              <p className="example-text-2">
-                A web app for visualizing personalized Spotify data. View your
-                top artists, top tracks, recently played tracks, and detailed
-                audio information about each track. Create and save new
-                playlists of recommended tracks based on your existing playlists
-                and more.
-              </p>
-            </div>
+              <img src='/Screenshot1.png' />
+              <div className='container-example-text-2'>
+                <p className='example-subtitle'>Featured Project</p>
+                <h3 className='example-title'>Example of my work</h3>
+                <p className='example-text-2'>
+                  A web app for visualizing personalized Spotify data. View your
+                  top artists, top tracks, recently played tracks, and detailed
+                  audio information about each track. Create and save new
+                  playlists of recommended tracks based on your existing
+                  playlists and more.
+                </p>
+              </div>
             </div>
           </div>
+        </section>
+        {/* !!!!!!!!!!!!!!!!!!!Contact !!!!!!!!!!!!!!!*/}
+        <section className='contact'>
+          <h3 className='contact-title'>Contact</h3>
+          <p className='contact-subtitle'>
+            I'm currently looking to join a cross-functional team that values
+            improving people's lives through accessible design. or have a
+            project in mind? Let's connect. 
+          </p>
+          <p className="contact-email">samuelpouardpro@gmail.com</p>
         </section>
       </main>
     </section>

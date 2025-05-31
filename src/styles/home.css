@@ -244,27 +244,53 @@
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!! Example !!!!!!!!!!!!!!!!! */
 
+.example{
+  display: flex;
+  flex-direction: column;
+  gap: 100px; 
+  margin: 17vh 0 0 0; 
+}
+
+.container-all-example-1,
+.container-all-example-2 {
+  width: 100%;
+  display: flex;
+}
+
 .container-all-example-1 {
-  width: auto; 
-  position: absolute;
-  right: 11%;
-  top: 170%;
+  justify-content: flex-end;
+  padding-right: 11%;
+}
+
+.container-all-example-2 {
+  justify-content: flex-start;
+  padding-left: 11%;
 }
 
 .container-example {
   display: flex;
   flex-direction: row;
 }
+
 .container-example img {
   width: 500px;
   height: 304px;
   border-radius: 15px;
 }
-.container-example-text-1 {
+
+.container-example-text-1,
+.container-example-text-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.container-example-text-2 {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Text styles (pas modifiés) */
 .example-subtitle {
   color: #9857d3;
   font-family: Poppins;
@@ -284,34 +310,7 @@
   letter-spacing: 0.68px;
   margin-top: 5px;
 }
-
-.example-text-1 {
-  margin-top: 20px;
-  color: #ffffff;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-   max-width: 600px;
-}
-
-.container-all-example-2 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  left: 11%;
-  top: 200%;
-}
-.container-example-text-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: right;
-}
-
+.example-text-1,
 .example-text-2 {
   margin-top: 20px;
   color: #ffffff;
@@ -320,5 +319,50 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-   max-width: 600px;
+  max-width: 600px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!CONTACT!!!!!!!!!!!!!! */
+.contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 130px;
+  font-family: Preahvihear;
+  margin-top: 300px;
+
+}
+.contact-title{
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.5px;
+width: 30%;
+
+}
+.contact-subtitle{
+ color: #FFF;
+font-family: Preahvihear;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.3px;
+width: 30%;
+margin-top: 50px;
+}
+.contact-email{
+  color: #FFF;
+font-family: Preahvihear;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.3px;
+width: 30%;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
