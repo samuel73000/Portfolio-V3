@@ -189,7 +189,7 @@ export default function Home() {
             project in mind? Let's connect.
           </p>
 
-        {/* 
+          {/* 
           <form name='contact' method='POST' data-netlify='true'>
             <p>
               <label>
@@ -213,85 +213,67 @@ export default function Home() {
             </p>
           </form> */}
 
+          <form name='contact' method='POST' data-netlify='true' netlify>
+            {/* Required for Netlify's bot to parse the form */}
+            <input type='hidden' name='form-name' value='contact' />
 
+            <TextField
+              type='text'
+              label='Your Name'
+              name='name'
+              fullWidth
+              margin='normal'
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&:hover fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                },
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiInputBase-input": { color: "white" },
+              }}
+            />
 
+            <TextField
+              label='Your Email'
+              name='email'
+              type='email'
+              fullWidth
+              margin='normal'
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&:hover fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                },
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiInputBase-input": { color: "white" },
+              }}
+            />
 
+            <TextField
+              type='text'
+              label='Message'
+              name='message'
+              multiline
+              rows={4}
+              fullWidth
+              margin='normal'
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&:hover fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                },
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiInputBase-input": { color: "white" },
+              }}
+            />
 
-
-
-
-
-
-<form name="contact" method="POST" data-netlify="true">
-  {/* Required for Netlify's bot to parse the form */}
-  <input type="hidden" name="form-name" value="contact" />
-
-  <TextField
-    label="Your Name"
-    name="name"
-    fullWidth
-    margin="normal"
-    sx={{
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': { borderColor: 'white' },
-        '&:hover fieldset': { borderColor: 'white' },
-        '&.Mui-focused fieldset': { borderColor: 'white' },
-      },
-      '& .MuiInputLabel-root': { color: 'white' },
-      '& .MuiInputBase-input': { color: 'white' },
-    }}
-  />
-
-  <TextField
-    label="Your Email"
-    name="email"
-    type="email"
-    fullWidth
-    margin="normal"
-    sx={{
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': { borderColor: 'white' },
-        '&:hover fieldset': { borderColor: 'white' },
-        '&.Mui-focused fieldset': { borderColor: 'white' },
-      },
-      '& .MuiInputLabel-root': { color: 'white' },
-      '& .MuiInputBase-input': { color: 'white' },
-    }}
-  />
-
-  <TextField
-    label="Message"
-    name="message"
-    multiline
-    rows={4}
-    fullWidth
-    margin="normal"
-    sx={{
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': { borderColor: 'white' },
-        '&:hover fieldset': { borderColor: 'white' },
-        '&.Mui-focused fieldset': { borderColor: 'white' },
-      },
-      '& .MuiInputLabel-root': { color: 'white' },
-      '& .MuiInputBase-input': { color: 'white' },
-    }}
-  />
-
-  <Button type="submit" variant="outlined" sx={{ marginTop: '1rem' }}>
-    Send
-  </Button>
-</form>
-
-
-
-
-
-
-
-
-
-
-
+            <Button type='submit' variant='outlined' sx={{ marginTop: "1rem" }}>
+              Send
+            </Button>
+          </form>
         </section>
       </main>
     </section>
