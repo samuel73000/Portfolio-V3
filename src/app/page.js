@@ -36,30 +36,55 @@ export default function Home() {
               />
             </svg>
             <p className='text-hero-1'>
-              Bonjour ! Je suis<span className='span-hero-texte'>Samuel Pouard</span>
+              Bonjour ! Je suis
+              <span className='span-hero-texte'> Samuel Pouard</span>
             </p>
             <p className='text-hero-2'>Un développeur front-end passionné</p>
             <h1 className='hero-title-1'>
               Qui soigne chaque détail de{" "}
               <span className='span-hero-texte'>l’interface</span> ...
             </h1>
-            <svg
-              className='svg-cercle-hero'
-              xmlns='http://www.w3.org/2000/svg'
-              width='189'
-              height='61'
-              viewBox='0 0 189 61'
-              fill='none'>
-              <path
-                d='M92.0103 2.29732C117.923 0.146646 141.632 1.42663 159.009 5.22283C167.701 7.12163 174.78 9.64424 179.756 12.6612C184.743 15.6853 187.523 19.1444 187.834 22.8914C188.145 26.6385 185.974 30.5093 181.553 34.3143C177.143 38.1102 170.576 41.7645 162.316 45.0702C145.802 51.6793 122.63 56.8501 96.7164 59.0008C70.8031 61.1515 47.095 59.8715 29.7175 56.0753C21.0258 54.1765 13.9464 51.6548 8.97072 48.6379C3.98326 45.6137 1.2037 42.1538 0.892707 38.4067C0.581826 34.6597 2.75303 30.7897 7.17361 26.9848C11.5839 23.1888 18.1505 19.5336 26.4104 16.2279C42.9243 9.6189 66.0971 4.448 92.0103 2.29732Z'
-                stroke='white'
-              />
-            </svg>
             <p className='text-hero-3'>
               Parce que si l’apparence ne donne pas envie, pourquoi cliquer ?
             </p>
           </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section className='container-hero-2'>
           <div div className='container-hero-text-2'>
             <h2 className='hero-title-2'>
@@ -67,78 +92,86 @@ export default function Home() {
               <TypewriterText />{" "}
             </h2>
             <p className='text-hero-4'>
-  Actuellement, je suis développeur front-end freelance. Retrouvez-moi sur
-  <a href='https://www.linkedin.com/in/samuel-pouard/' target='_blank' rel='noopener noreferrer'>
-    {" "}
-    <img src='/linkedin.png' alt='logo linkedin' /> LinkedIn
-  </a>
-  .
-</p>
+              Actuellement, je suis développeur front-end freelance.
+              Retrouvez-moi sur
+              <a
+                href='https://www.linkedin.com/in/samuel-pouard/'
+                target='_blank'
+                rel='noopener noreferrer'>
+                {" "}
+                <img src='/linkedin.png' alt='logo linkedin' /> LinkedIn
+              </a>
+              .
+            </p>
             <p className='text-hero-5'>
-              Développeur front-end autodidacte, je conçois des sites web modernes et performants depuis plus de 3 ans.  
-  Mon objectif : créer des expériences numériques sur mesure, à la fois utiles pour les utilisateurs et efficaces pour les entreprises.
+              Développeur front-end autodidacte, je conçois des sites web
+              modernes et performants depuis plus de 3 ans. Mon objectif : créer
+              des expériences numériques sur mesure, à la fois utiles pour les
+              utilisateurs et efficaces pour les entreprises.
             </p>
           </div>
         </section>
         {/* !!!!!!!!!!!!!!!!!!!!!!!!!WORK!!!!!!!!!!!!!!!! */}
 
         <section className='work'>
-  <h2 className='work-title'>Mes projets</h2>
-  <div className='gradient-work'></div>
-  <div className='container-all-work'>
+          <h2 className='work-title'>Mes projets</h2>
+          <div className='gradient-work'></div>
+          <div className='container-all-work'>
+            <div className='container-work'>
+              <img src='/work1.png' alt='aperçu projet' />
+              <div className='container-work-text'>
+                <h3>Site vitrine pour une entreprise locale</h3>
+                <p>
+                  Conception d’un site responsive et optimisé SEO pour améliorer
+                  la visibilité d’une entreprise artisanale sur le web.
+                </p>
+              </div>
+            </div>
 
-    <div className='container-work'>
-      <img src='/work1.png' alt='aperçu projet' />
-      <div className='container-work-text'>
-        <h3>Site vitrine pour une entreprise locale</h3>
-        <p>
-          Conception d’un site responsive et optimisé SEO pour améliorer la visibilité d’une entreprise artisanale sur le web.
-        </p>
-      </div>
-    </div>
+            <div className='container-work'>
+              <img src='/work2.png' alt='aperçu projet' />
+              <div className='container-work-text'>
+                <h3>Landing page marketing</h3>
+                <p>
+                  Développement d’une page de vente performante avec animations
+                  CSS et formulaire de contact entièrement fonctionnel.
+                </p>
+              </div>
+            </div>
 
-    <div className='container-work'>
-      <img src='/work2.png' alt='aperçu projet' />
-      <div className='container-work-text'>
-        <h3>Landing page marketing</h3>
-        <p>
-          Développement d’une page de vente performante avec animations CSS et formulaire de contact entièrement fonctionnel.
-        </p>
-      </div>
-    </div>
+            <div className='container-work'>
+              <img src='/work3.png' alt='aperçu projet' />
+              <div className='container-work-text'>
+                <h3>Portfolio personnel</h3>
+                <p>
+                  Réalisation de mon propre site pour présenter mes compétences,
+                  projets et faciliter la prise de contact avec les clients.
+                </p>
+              </div>
+            </div>
 
-    <div className='container-work'>
-      <img src='/work3.png' alt='aperçu projet' />
-      <div className='container-work-text'>
-        <h3>Portfolio personnel</h3>
-        <p>
-          Réalisation de mon propre site pour présenter mes compétences, projets et faciliter la prise de contact avec les clients.
-        </p>
-      </div>
-    </div>
-
-    <div className='container-work'>
-      <img src='/work4.png' alt='aperçu projet' />
-      <div className='container-work-text'>
-        <h3>Blog WordPress personnalisé</h3>
-        <p>
-          Création d’un thème WordPress sur mesure pour un blog professionnel avec une interface d’administration simple.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
+            <div className='container-work'>
+              <img src='/work4.png' alt='aperçu projet' />
+              <div className='container-work-text'>
+                <h3>Blog WordPress personnalisé</h3>
+                <p>
+                  Création d’un thème WordPress sur mesure pour un blog
+                  professionnel avec une interface d’administration simple.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* !!!!!!!!!!!!!!!!!!!!!!!!!WORK2!!!!!!!!!!!!!!!! */}
         <section className='work2'>
           <h3 className='work-title-2'>
-                Je cherche actuellement à rejoindre une équipe <span>pluridisciplinaire</span>
-
+            Je cherche actuellement à rejoindre une équipe{" "}
+            <span>pluridisciplinaire</span>
           </h3>
           <p className='work-subtile'>
-                qui valorise l'amélioration de la vie des utilisateurs grâce à un design accessible et performant.
-
+            qui valorise l'amélioration de la vie des utilisateurs grâce à un
+            design accessible et performant.
           </p>
           <img src='/skill.png' />
         </section>
@@ -181,106 +214,104 @@ export default function Home() {
         {/* !!!!!!!!!!!!!!!!!!!Contact !!!!!!!!!!!!!!!*/}
         <section className='contact'>
           <h3 className='contact-title'>Contact</h3>
-<p className='contact-subtitle'>
-  Je suis actuellement à la recherche d'une équipe pluridisciplinaire qui partage la volonté d'améliorer la vie des utilisateurs grâce à un design accessible.  
-  Vous avez un projet en tête ? Contactons-nous !
-</p>
-         <Button
-  className='contact-button'
-  variant='contained'
-  onClick={() => setOpen(!open)}
-  sx={{
-    backgroundColor: "#9857d3",
-    marginTop: "100px",
-    marginBottom: "100px",
-    "&:hover": {
-      backgroundColor: "#7a46b1",
-    },
-  }}
->
-  {open ? "Fermer le formulaire" : "Me contacter"}
-</Button>
+          <p className='contact-subtitle'>
+            Je suis actuellement à la recherche d'une équipe pluridisciplinaire
+            qui partage la volonté d'améliorer la vie des utilisateurs grâce à
+            un design accessible. Vous avez un projet en tête ? Contactons-nous
+            !
+          </p>
+          <Button
+            className='contact-button'
+            variant='contained'
+            onClick={() => setOpen(!open)}
+            sx={{
+              backgroundColor: "#9857d3",
+              marginTop: "100px",
+              marginBottom: "100px",
+              "&:hover": {
+                backgroundColor: "#7a46b1",
+              },
+            }}>
+            {open ? "Fermer le formulaire" : "Me contacter"}
+          </Button>
 
-<form
-  name='contact'
-  method='POST'
-  data-netlify='true'
-  netlify
-  className={open ? "form-visible" : "form-hidden"}
->
-  {/* Nécessaire pour le parsing du formulaire par Netlify */}
-  <input type='hidden' name='form-name' value='contact' />
+          <form
+            name='contact'
+            method='POST'
+            data-netlify='true'
+            netlify
+            className={open ? "form-visible" : "form-hidden"}>
+            {/* Nécessaire pour le parsing du formulaire par Netlify */}
+            <input type='hidden' name='form-name' value='contact' />
 
-  <TextField
-    type='text'
-    label='Votre nom'
-    name='name'
-    fullWidth
-    margin='normal'
-    sx={{
-      "& .MuiOutlinedInput-root": {
-        "& fieldset": { borderColor: "white" },
-        "&:hover fieldset": { borderColor: "white" },
-        "&.Mui-focused fieldset": { borderColor: "white" },
-      },
-      "& .MuiInputLabel-root": { color: "white" },
-      "& .MuiInputBase-input": { color: "white" },
-    }}
-  />
+            <TextField
+              type='text'
+              label='Votre nom'
+              name='name'
+              fullWidth
+              margin='normal'
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&:hover fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                },
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiInputBase-input": { color: "white" },
+              }}
+            />
 
-  <TextField
-    label='Votre email'
-    name='email'
-    type='email'
-    fullWidth
-    margin='normal'
-    sx={{
-      "& .MuiOutlinedInput-root": {
-        "& fieldset": { borderColor: "white" },
-        "&:hover fieldset": { borderColor: "white" },
-        "&.Mui-focused fieldset": { borderColor: "white" },
-      },
-      "& .MuiInputLabel-root": { color: "white" },
-      "& .MuiInputBase-input": { color: "white" },
-    }}
-  />
+            <TextField
+              label='Votre email'
+              name='email'
+              type='email'
+              fullWidth
+              margin='normal'
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&:hover fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                },
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiInputBase-input": { color: "white" },
+              }}
+            />
 
-  <TextField
-    type='text'
-    label='Votre message'
-    name='message'
-    multiline
-    rows={4}
-    fullWidth
-    margin='normal'
-    sx={{
-      "& .MuiOutlinedInput-root": {
-        "& fieldset": { borderColor: "white" },
-        "&:hover fieldset": { borderColor: "white" },
-        "&.Mui-focused fieldset": { borderColor: "white" },
-      },
-      "& .MuiInputLabel-root": { color: "white" },
-      "& .MuiInputBase-input": { color: "white" },
-    }}
-  />
+            <TextField
+              type='text'
+              label='Votre message'
+              name='message'
+              multiline
+              rows={4}
+              fullWidth
+              margin='normal'
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&:hover fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                },
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiInputBase-input": { color: "white" },
+              }}
+            />
 
-  <Button
-    type='submit'
-    variant='outlined'
-    sx={{
-      marginTop: "1rem",
-      borderColor: "#7a46b1",
-      color: "#fff",
-      "&:hover": {
-        borderColor: "#9857d3",
-        backgroundColor: "rgba(122, 70, 177, 0.1)",
-      },
-    }}
-  >
-    Envoyer
-  </Button>
-</form>
-
+            <Button
+              type='submit'
+              variant='outlined'
+              sx={{
+                marginTop: "1rem",
+                borderColor: "#7a46b1",
+                color: "#fff",
+                "&:hover": {
+                  borderColor: "#9857d3",
+                  backgroundColor: "rgba(122, 70, 177, 0.1)",
+                },
+              }}>
+              Envoyer
+            </Button>
+          </form>
         </section>
       </main>
     </section>

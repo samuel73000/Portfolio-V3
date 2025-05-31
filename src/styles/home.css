@@ -12,7 +12,7 @@
 .gradient-hero {
   z-index: 1;
   position: absolute;
- margin-right: 15vw;
+ margin-right: 22vw;
   width: 385px;
   height: 431px;
   flex-shrink: 0;
@@ -30,16 +30,17 @@
   font-family: Preahvihear;
   margin-top: -100px;
   color: #fff;
-  width: 15%;
+  width: 500px;
 }
 .svg-fleche-hero {
+  position: absolute;
+ top: 7.5vh;
+ right: 54vw; 
   width: 91.782px;
   height: 81.857px;
   flex-shrink: 0;
-  position: absolute;
-  top: 7.5vh;
-  left: 44.5vw;
 }
+
 .span-hero-texte {
   color: #7127ba;
 }
@@ -61,15 +62,6 @@
   line-height: 126.664%; /* 63.332px */
   letter-spacing: 1px;
 }
-.svg-cercle-hero {
-  width: 155.584px;
-  height: 57.899px;
-  transform: rotate(-1.744deg);
-  flex-shrink: 0;
-  position: absolute;
-  top: 20.2vh;
-  left: 53.2vw;
-}
 .text-hero-3 {
   font-size: 11px;
   font-style: normal;
@@ -77,6 +69,52 @@
   line-height: normal;
   letter-spacing: 0.22px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container-hero-2 {
   justify-content: center;
