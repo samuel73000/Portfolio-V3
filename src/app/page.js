@@ -202,7 +202,7 @@ export default function Home() {
                 backgroundColor: "#7a46b1",
               },
             }}>
-              {open ? "close form" : "contact me"}
+            {open ? "close form" : "contact me"}
           </Button>
 
           <form
@@ -267,7 +267,18 @@ export default function Home() {
               }}
             />
 
-            <Button type='submit' variant='outlined' sx={{ marginTop: "1rem" }}>
+            <Button
+              type='submit'
+              variant='outlined'
+              sx={{
+                marginTop: "1rem",
+                borderColor: "#7a46b1",
+                color: "#fff",
+                "&:hover": {
+                  borderColor: "#9857d3",
+                  backgroundColor: "rgba(122, 70, 177, 0.1)",
+                },
+              }}>
               Send
             </Button>
           </form>
@@ -276,3 +287,4 @@ export default function Home() {
     </section>
   );
 }
+// /* , favicom , texte , responsive  , les svg bouges */
