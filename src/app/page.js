@@ -191,6 +191,10 @@ export default function Home() {
 
           
 
+
+
+
+
           <form name='contact' method='POST' data-netlify='true'>
             <p>
               <label>
@@ -200,15 +204,6 @@ export default function Home() {
             <p>
               <label>
                 Your Email: <input type='email' name='email' />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Role:{" "}
-                <select name='role[]' multiple>
-                  <option value='leader'>Leader</option>
-                  <option value='follower'>Follower</option>
-                </select>
               </label>
             </p>
             <p>
