@@ -1,6 +1,8 @@
 import "../styles/home.css";
 import TypewriterText from "../components/typewriterText";
-
+import * as React from "react";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/Button";
 export default function Home() {
   return (
     <section>
@@ -183,35 +185,43 @@ export default function Home() {
           <p className='contact-subtitle'>
             I'm currently looking to join a cross-functional team that values
             improving people's lives through accessible design. or have a
-            project in mind? Let's connect. 
+            project in mind? Let's connect.
           </p>
-          <p className="contact-email">samuelpouardpro@gmail.com</p>
+          <p className='contact-email'>samuelpouardpro@gmail.com</p>
 
+          
 
-
-
-
-          <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-
+          <form name='contact' method='POST' data-netlify='true'>
+            <p>
+              <label>
+                Your Name: <input type='text' name='name' />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email: <input type='email' name='email' />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Role:{" "}
+                <select name='role[]' multiple>
+                  <option value='leader'>Leader</option>
+                  <option value='follower'>Follower</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name='message'></textarea>
+              </label>
+            </p>
+            <p>
+              <Button type='submit' variant='outlined'>
+                Send
+              </Button>
+            </p>
+          </form>
         </section>
       </main>
     </section>
