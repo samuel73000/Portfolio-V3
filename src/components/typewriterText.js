@@ -8,7 +8,7 @@ export default function TypewriterText() {
   return (
     <Typewriter
       options={{
-        strings: ['Im a Software Engineer.', 'Créateur de sites web', 'Passionné de code'],
+        strings: ['Développeur front-end freelance.', 'Créateur d’expériences web sur mesure.'],
         autoStart: true,
         loop: true,
       }}
