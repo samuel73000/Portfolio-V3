@@ -36,8 +36,8 @@
   height: 81.857px;
   flex-shrink: 0;
   position: absolute;
-  top: 13.5%;
-  left: 45%;
+  top: 7.5vh;
+  left: 44.5vw;
 }
 .span-hero-texte {
   color: #7127ba;
@@ -66,8 +66,8 @@
   transform: rotate(-1.744deg);
   flex-shrink: 0;
   position: absolute;
-  top: 26.1%;
-  left: 54.4%;
+  top: 20.2vh;
+  left: 53.2vw;
 }
 .text-hero-3 {
   font-size: 11px;

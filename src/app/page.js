@@ -1,11 +1,9 @@
 import "../styles/home.css";
-import Header from "../components/header";
 import TypewriterText from "../components/typewriterText";
 
 export default function Home() {
   return (
     <section>
-      <Header />
       <main>
         {/*!!!!!!!!!!!!!!!!!!! HERO!!!!!!!!!!!!!! */}
         <section className='hero'>
